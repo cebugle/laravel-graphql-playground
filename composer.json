@@ -1,5 +1,5 @@
 {
-  "name": "mll-lab/laravel-graphql-playground",
+  "name": "cebugle/laravel-graphql-playground",
   "description": "Easily integrate GraphQL Playground into your Laravel project",
   "license": "MIT",
   "keywords": [
@@ -9,15 +9,15 @@
   ],
   "authors": [
     {
-      "name": "Benedikt Franke",
-      "email": "benedikt@franke.tech"
+      "name": "Darwin Luague",
+      "email": "darwinluague9001@gmail.com"
     }
   ],
   "require": {
     "php": "^7.1 || ^8",
-    "illuminate/console": "5.5.* || 5.6.* || 5.7.* || 5.8.* || ^6 || ^7 || ^8 || ^9",
-    "illuminate/contracts": "5.5.* || 5.6.* || 5.7.* || 5.8.* || ^6 || ^7 || ^8 || ^9",
-    "illuminate/support": "5.5.* || 5.6.* || 5.7.* || 5.8.* || ^6 || ^7 || ^8 || ^9"
+    "illuminate/console": "5.5.* || 5.6.* || 5.7.* || 5.8.* || ^6 || ^7 || ^8 || ^9 || ^10",
+    "illuminate/contracts": "5.5.* || 5.6.* || 5.7.* || 5.8.* || ^6 || ^7 || ^8 || ^9 || ^10",
+    "illuminate/support": "5.5.* || 5.6.* || 5.7.* || 5.8.* || ^6 || ^7 || ^8 || ^9 || ^10"
   },
   "require-dev": {
     "ergebnis/composer-normalize": "^2",
@@ -28,7 +28,7 @@
   "prefer-stable": true,
   "autoload": {
     "psr-4": {
-      "MLL\\GraphQLPlayground\\": "src/"
+      "Cebugle\\GraphQLPlayground\\": "src/"
     }
   },
   "config": {
@@ -41,7 +41,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "MLL\\GraphQLPlayground\\GraphQLPlaygroundServiceProvider"
+        "Cebugle\\GraphQLPlayground\\GraphQLPlaygroundServiceProvider"
       ]
     }
   }

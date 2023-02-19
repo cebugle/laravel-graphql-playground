@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace MLL\GraphQLPlayground;
+namespace Cebugle\GraphQLPlayground;
 
 class GraphQLPlaygroundController
 {

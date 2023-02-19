@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace MLL\GraphQLPlayground;
+namespace Cebugle\GraphQLPlayground;
 
 use Illuminate\Contracts\Config\Repository as ConfigRepository;
 use Illuminate\Support\ServiceProvider;

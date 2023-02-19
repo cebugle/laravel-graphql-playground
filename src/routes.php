@@ -2,16 +2,22 @@
 
 declare(strict_types=1);
 
-/** @var \Illuminate\Contracts\Config\Repository $config */
+/** @var Repository $config */
+
+use Laravel\Lumen\Routing\Router;
+use Illuminate\Contracts\Config\Repository;
+use Illuminate\Contracts\Routing\Registrar;
+use Cebugle\GraphQLPlayground\GraphQLPlaygroundController;
+
 $config = app('config');
 
 if ($routeConfig = $config->get('graphql-playground.route')) {
-    /** @var \Illuminate\Contracts\Routing\Registrar|\Laravel\Lumen\Routing\Router $router */
+    /** @var Registrar|Router $router */
     $router = app('router');
 
     $actions = [
         'as' => $routeConfig['name'] ?? 'graphql-playground',
-        'uses' => \MLL\GraphQLPlayground\GraphQLPlaygroundController::class,
+        'uses' => GraphQLPlaygroundController::class,
     ];
 
     if (isset($routeConfig['middleware'])) {
