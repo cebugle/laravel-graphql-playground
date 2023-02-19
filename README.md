@@ -17,12 +17,12 @@ Easily integrate [GraphQL Playground](https://github.com/prismagraphql/graphql-p
 
 ## Installation
 
-    composer require mll-lab/laravel-graphql-playground
+    composer require cebugle/laravel-graphql-playground
 
 If you are using Lumen, register the service provider in `bootstrap/app.php`
 
 ```php
-$app->register(MLL\GraphQLPlayground\GraphQLPlaygroundServiceProvider::class);
+$app->register(Cebugle\GraphQLPlayground\GraphQLPlaygroundServiceProvider::class);
 ```
 
 ## Configuration
